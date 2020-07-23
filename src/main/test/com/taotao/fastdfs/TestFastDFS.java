@@ -1,6 +1,6 @@
 package com.taotao.fastdfs;
 
-import com.taotao.common.pojo.FastDFSClient;
+import com.taotao.utils.FastDFSClient;
 import org.csource.fastdfs.ClientGlobal;
 import org.csource.fastdfs.StorageClient;
 import org.csource.fastdfs.StorageServer;
