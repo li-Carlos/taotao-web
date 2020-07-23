@@ -3,17 +3,14 @@ package com.taotao.controller;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.taotao.pojo.TaotaoResult;
-import com.taotao.pojo.TbItem;
-import com.taotao.utils.FastDFSClient;
+import com.taotao.common.utils.FastDFSClient;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.taotao.utils.JsonUtils;
+import com.taotao.common.utils.JsonUtils;
 
 /**
  * 图片上传controller
