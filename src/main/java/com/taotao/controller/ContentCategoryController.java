@@ -2,6 +2,8 @@ package com.taotao.controller;
 
 import java.util.List;
 
+import com.taotao.common.pojo.EasyUIDataGridResult;
+import com.taotao.pojo.TbContent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,5 +42,25 @@ public class ContentCategoryController {
 		TaotaoResult result = contentCategoryService.addContentCategory(parentId, name);
 		return result;
 	}
+	@RequestMapping("/content/category/update")
+	@ResponseBody
+	public TaotaoResult updateContentCategory(Long id, String name) {
+		TaotaoResult result = contentCategoryService.updateContentCategory(id,name);
+		return result;
+	}
+
+	@RequestMapping("/content/category/delete")
+	@ResponseBody
+	public TaotaoResult deleteContentCategory(Long id) {
+		TaotaoResult result = contentCategoryService.deleteContentCategory(id);
+		return result;
+	}
+	@RequestMapping("/content/query/list")
+	@ResponseBody
+	public EasyUIDataGridResult getContentList(Long categoryId, Integer page, Integer rows) {
+		EasyUIDataGridResult result = contentCategoryService.getContentList(categoryId,page,rows);
+		return result;
+	}
+
 }
 
