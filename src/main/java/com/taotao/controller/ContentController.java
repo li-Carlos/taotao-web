@@ -25,7 +25,7 @@ public class ContentController {
     @RequestMapping("/content/save")
     @ResponseBody
     public TaotaoResult ContentSave(TbContent tbContent) {
-        TaotaoResult result = contentService.contentSave(tbContent);
+        TaotaoResult result = contentService.addContent(tbContent);
         return result;
     }
 
