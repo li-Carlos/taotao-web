@@ -3,6 +3,7 @@ package com.taotao.controller;
 import java.util.List;
 
 import com.taotao.common.pojo.EasyUIDataGridResult;
+import com.taotao.content.service.ContentService;
 import com.taotao.pojo.TbContent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -55,12 +56,7 @@ public class ContentCategoryController {
 		TaotaoResult result = contentCategoryService.deleteContentCategory(id);
 		return result;
 	}
-	@RequestMapping("/content/query/list")
-	@ResponseBody
-	public EasyUIDataGridResult getContentList(Long categoryId, Integer page, Integer rows) {
-		EasyUIDataGridResult result = contentCategoryService.getContentList(categoryId,page,rows);
-		return result;
-	}
+
 
 }
 
