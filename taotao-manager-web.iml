@@ -74,6 +74,7 @@
     <orderEntry type="library" name="Maven: com.taotao:taotao-manager-interface:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.taotao:taotao-manager-pojo:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.taotao:taotao-content-interface:1.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.taotao:taotao-search-interface:1.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.2.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
